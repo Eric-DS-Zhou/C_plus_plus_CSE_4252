@@ -1,0 +1,35 @@
+Script started on 2026-09-22 17:25:18-04:00
+]777;notify;Command completed;zip -r Lab1.zip Lab1]0;zhou.4898@coe-dnc268478s:~/cse4252/lab2]7;file://coe-dnc268478s.coeit.osu.edu/home/zhou.4898/cse4252/lab2[zhou.4898@coe-dnc268478s lab2]$ nano[K[K[K[Kls
+extractInt.cpp  lab2.txt
+]777;notify;Command completed;ls]0;zhou.4898@coe-dnc268478s:~/cse4252/lab2]7;file://coe-dnc268478s.coeit.osu.edu/home/zhou.4898/cse4252/lab2[zhou.4898@coe-dnc268478s lab2]$ nano extrac[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ](B[m[22;18H(B[0;7m[ Read 128 lines (Converted from DOS format) ](B[m[H(B[0;7m  GNU nano 2.9.8                    extractInt.cpp                              [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3d(B[0;1m[36m#include[39m(B[m (B[0;1m[33m<iostream>[4d[36m#include[39m(B[m (B[0;1m[33m<fstream>[5d[36m#include[39m(B[m (B[0;1m[33m<cstdlib>[6d[36m#include[39m(B[m (B[0;1m[33m<string>[8d(B[0m[32musing[39m(B[m [32mnamespace[39m(B[m std;[9d(B[0;1m[34m/* Use of & signifies Call by Reference. What it means in short is whatever you[39m(B[m$[10;1H(B[0;1m[34m reflected back to the calling function. So, you need not return values */[11d(B[0m[32mbool[39m(B[m getInt(ifstream&, [32mbool[39m(B[m&, [32mint[39m(B[m&, string&);[12d[32mint[39m(B[m getFileSize(ifstream&);[13d[32mint[39m(B[m getLineCount(ifstream&);[15d[32mint[39m(B[m main ()[16d{[17;9H[32mint[39m(B[m intData;[18;9Hstring junkData;[19;9H[32mbool[39m(B[m valueIsGood = false;[20;9Hstring fileName = (B[0;1m[33m""[39m(B[m;[21;9Hcout << (B[0;1m[33m"Enter the input filename: "[39m(B[m;[3d[?12l[?25h[?25l[22d[J[24Script started on 2026-09-22 17:25:18-04:00
+[zhou.4898@coe-dnc268478s lab2]$ ls
+extractInt.cpp  lab2.txt
+[zhou.4898@coe-dnc268478s lab2]$ nano extractInt.cpp
+[zhou.4898@coe-dnc268478s lab2]$ g++ extractInt.cpp -o extractInt
+[zhou.4898@coe-dnc268478s lab2]$ ./extractInt
+Enter the input filename: perLine.txt
+
+File Size: 54
+Number of lines in the input file: 9
+You can now open intVals.txt and junkVals.txt to see the output!
+[zhou.4898@coe-dnc268478s lab2]$ cat intVals.txt
+123
+24
+56
+1
+34
+6
+89
+[zhou.4898@coe-dnc268478s lab2]$ cat junkVals.txt
+August
+space
+.5
+t7share
+x
+[zhou.4898@coe-dnc268478s lab2]$ end
+bash: end: command not found...
+[zhou.4898@coe-dnc268478s lab2]$ exit
+exit
+
+Script done on 2026-09-22 17:30:14-04:00
+
