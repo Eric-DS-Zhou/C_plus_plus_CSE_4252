@@ -101,6 +101,25 @@ int getLineCount(ifstream& fin) {
 bool getInt(ifstream& fin, bool& goodFlag, int& intData, string& junkData){
 	bool canContinue;
 	// Code the logic here
+	fin >> intData;
+
+	if (!fin.fail()) {
+		goodFlag = true;
+	} else {
+		if (fin.eof()){
+			canContinue = false;
+		} else {
+			fin.clear();
+			fin >> junkData;
+
+			if (fin.fail()) {
+				canContinue = false;
+			} else {
+				goodFlag = false;
+			}
+		}
+	}
+
 
 	return canContinue;
 }
