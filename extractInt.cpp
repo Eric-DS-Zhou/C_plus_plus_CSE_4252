@@ -18,7 +18,7 @@ int main ()
 	string fileName = "";
 	cout << "Enter the input filename: ";
 	cin >> fileName;
-	cout <<endl;
+	cout << endl;
 	
 	//Open the file in read mode with the ifstream object fin
 	ifstream fin(fileName);
@@ -45,7 +45,7 @@ int main ()
 	}
 
 	//Print the size of the file
-	cout << "File Size: " << getFileSize(fin); 
+	cout << "File Size: " << getFileSize(fin) << endl; 
 
 	//Print the number of lines
 	cout << "Number of lines in the input file: " << getLineCount(fin) << endl;
@@ -99,7 +99,7 @@ int getLineCount(ifstream& fin) {
 
 // Function returns False if you cannot continue reading the file i.e. either the EOF or the Bad flag got set
 bool getInt(ifstream& fin, bool& goodFlag, int& intData, string& junkData){
-	bool canContinue;
+	bool canContinue = true;
 	// Code the logic here
 	fin >> intData;
 
