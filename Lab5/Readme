@@ -1,0 +1,11 @@
+Lab 5 Exercise 2
+
+Compilation:
+
+g++ main.cpp Shapes.cpp -o lab5_2
+
+Execution:
+
+./lab5_2
+
+Quadrilateral is an abstract class and cannot be instantiated directly.
