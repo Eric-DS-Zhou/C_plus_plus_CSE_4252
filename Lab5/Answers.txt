@@ -1,0 +1,51 @@
+Original Script:
+var = 1
+var = 0
+
+Question 1:
+var = 1
+var = -2
+
+After modification:
+var = 1, varB = 0
+var = -2, varB = 0
+
+Intially, ptr -> print() calls A::print() because the ptr is a pointer of type A*.
+The print() is not declared as virtual in class A.
+
+To call B::print(), I changed the declaration of print() in class A to virtual void print();
+After the change, ptr -> print() will can B::print() because the ptr points to an object of class B.
+
+Question 2:
+var = 0
+var = 0
+
+When a = b is executed, only the class A portioin of object b is copied into a.
+Both a.print() and ptr -> print() call A::print() because a is an object of class A.
+The ptr = &a also means the ptr points to a.
+
+In qurstion 1, ptr points to an object of class B, so the virtual print() calls B::print().
+In question 2, ptr points to an object of class A, so it calls A::print() instead.
+
+Question 3:
+var = 0
+
+The statement b.A::print() calls A::print() using ::.
+Therefore, it calls the version in class A instead of class B because it explicitly specify class A.
+
+Question 4:
+A test (A obj) {
+    return obj;
+}
+
+Yes, we can pass an object of B to the function because B inherits from A.
+Only the class A portion of the B object is copied
+Therefore, the function returns an object of A instead of B.
+I tried to use B testb = test(b). It will give me a compilation error.
+
+Question 5:
+When changing class B : public A to class B : A, the inheritance becomes private.
+Therefore, A* ptr = &b will causes a compilation error.
+In conclusion, we cannot implicitly convert B to A outside class B.
+
+It will show "conversion to inaccessible base class "A" is not allowed.
